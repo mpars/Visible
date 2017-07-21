@@ -39,11 +39,11 @@
 	<key>DTXcodeBuild</key>
 	<string>8C1002</string>
 	<key>LSMinimumSystemVersion</key>
-	<string>10.10</string>
+	<string>10.11</string>
 	<key>LSUIElement</key>
 	<true/>
 	<key>NSHumanReadableCopyright</key>
-	<string>Copyright © 2017 mpars. All rights reserved.</string>
+	<string>Copyright (c) 2017 Mark Parsons</string>
 	<key>NSMainNibFile</key>
 	<string>MainMenu</string>
 	<key>NSPrincipalClass</key>

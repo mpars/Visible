@@ -40,7 +40,5 @@ class displayViewController: NSViewController {
     @IBAction func quit(_ sender: NSButton) {
         NSApplication.shared().terminate(sender)
     }
-    @IBAction func about(_ sender: NSButton) {
-        
-    }
+
 }

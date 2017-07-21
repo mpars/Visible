@@ -2,9 +2,9 @@
 // globalEventMonitor.swift
 // Visible
 //
-// a global event monitor taken from:
+// a global event monitor borrowed from:
 // https://stackoverflow.com/questions/38512281/swift-on-os-x-how-to-handle-global-mouse-events
-
+//
 
 
 

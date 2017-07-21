@@ -12,6 +12,9 @@
 		4D0487211F20D2A100E6F280 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D04871F1F20D2A100E6F280 /* MainMenu.xib */; };
 		4D04872C1F20D2A100E6F280 /* VisibleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D04872B1F20D2A100E6F280 /* VisibleTests.swift */; };
 		4D0487371F20D2A100E6F280 /* VisibleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0487361F20D2A100E6F280 /* VisibleUITests.swift */; };
+		4D0487451F20D32A00E6F280 /* displayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D0487441F20D32A00E6F280 /* displayViewController.swift */; };
+		4D0487471F20D33900E6F280 /* displayViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D0487461F20D33900E6F280 /* displayViewController.xib */; };
+		4D08E9761F20E69C00E75085 /* globalEventMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D08E9751F20E69C00E75085 /* globalEventMonitor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +46,9 @@
 		4D0487321F20D2A100E6F280 /* VisibleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VisibleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D0487361F20D2A100E6F280 /* VisibleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisibleUITests.swift; sourceTree = "<group>"; };
 		4D0487381F20D2A100E6F280 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D0487441F20D32A00E6F280 /* displayViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = displayViewController.swift; sourceTree = "<group>"; };
+		4D0487461F20D33900E6F280 /* displayViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = displayViewController.xib; sourceTree = "<group>"; };
+		4D08E9751F20E69C00E75085 /* globalEventMonitor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = globalEventMonitor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,8 +100,11 @@
 			isa = PBXGroup;
 			children = (
 				4D04871B1F20D2A100E6F280 /* AppDelegate.swift */,
+				4D08E9751F20E69C00E75085 /* globalEventMonitor.swift */,
 				4D04871D1F20D2A100E6F280 /* Assets.xcassets */,
 				4D04871F1F20D2A100E6F280 /* MainMenu.xib */,
+				4D0487441F20D32A00E6F280 /* displayViewController.swift */,
+				4D0487461F20D33900E6F280 /* displayViewController.xib */,
 				4D0487221F20D2A100E6F280 /* Info.plist */,
 			);
 			path = Visible;
@@ -226,6 +235,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D0487471F20D33900E6F280 /* displayViewController.xib in Resources */,
 				4D04871E1F20D2A100E6F280 /* Assets.xcassets in Resources */,
 				4D0487211F20D2A100E6F280 /* MainMenu.xib in Resources */,
 			);
@@ -252,7 +262,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D08E9761F20E69C00E75085 /* globalEventMonitor.swift in Sources */,
 				4D04871C1F20D2A100E6F280 /* AppDelegate.swift in Sources */,
+				4D0487451F20D32A00E6F280 /* displayViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -396,6 +408,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = Visible/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = alphabetthreat.Visible;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -409,6 +422,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = Visible/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = alphabetthreat.Visible;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
@@ -492,6 +506,7 @@
 				4D04873D1F20D2A100E6F280 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4D04873E1F20D2A100E6F280 /* Build configuration list for PBXNativeTarget "VisibleTests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +515,7 @@
 				4D0487401F20D2A100E6F280 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4D0487411F20D2A100E6F280 /* Build configuration list for PBXNativeTarget "VisibleUITests" */ = {
 			isa = XCConfigurationList;
@@ -508,6 +524,7 @@
 				4D0487431F20D2A100E6F280 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

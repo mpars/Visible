@@ -196,9 +196,9 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         let data = pipe.fileHandleForReading.readDataToEndOfFile()
         let output = NSString(data: data, encoding: String.Encoding.utf8.rawValue)
         
-        //print(output!)
+        print(output!)
         
-        if output!=="1\n" {
+        if (output!=="1\n") || output!=="YES\n" {
             // Files are visible, change to hidden
             ChangeStatusBarImageHidden(sender: sender)
             
@@ -234,8 +234,10 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         let data = pipe.fileHandleForReading.readDataToEndOfFile()
         let output = NSString(data: data, encoding: String.Encoding.utf8.rawValue)
         
+        print(output!)
+        
         // Check the output of task
-        if output!=="1\n" {
+        if (output!=="1\n" || output!=="YES\n") {
             
             // Visible
             if let button = statusItem.button {
